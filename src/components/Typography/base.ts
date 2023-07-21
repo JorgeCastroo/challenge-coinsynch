@@ -35,7 +35,7 @@ export const base = {
     },
 
     success: {
-      color: "tertiary-700",
+      color: "$tertiary-700",
     },
 
     white: {

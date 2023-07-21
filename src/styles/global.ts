@@ -29,4 +29,16 @@ export const globalStyle = globalCss({
     border: 0,
     cursor: "pointer !important",
   },
+  "::-webkit-scrollbar": {
+    width: "0px ",
+  },
+
+  "::-webkit-scrollbar-track": {
+    backgroundColor: "transparent",
+  },
+
+  "*::-webkit-scrollbar-thumb": {
+    width: "0px !important",
+    height: "110px",
+  },
 });

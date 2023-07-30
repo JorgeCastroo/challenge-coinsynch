@@ -1,7 +1,7 @@
 import { LandingPage } from "@/screens/LandingPage/LadingPage";
 
-const DashboardPage = () => {
+const LandingPagePage = () => {
   return <LandingPage />;
 };
 
-export default DashboardPage;
+export default LandingPagePage;

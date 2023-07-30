@@ -2,21 +2,22 @@ import React, { ReactNode } from "react";
 
 import * as S from "./styles";
 import { NavBar } from "./components/NavBar/Navbar";
+import { Aside } from "./components/Aside/Aside";
 
-type MainLayoutProps = {
+type DashLayoutProps = {
   children: ReactNode;
 };
 
-const MainLayout: React.FC<MainLayoutProps> = ({
+export const DashLayout: React.FC<DashLayoutProps> = ({
   children,
-}: MainLayoutProps) => {
+}: DashLayoutProps) => {
   return (
     <S.Container>
       <NavBar />
       <S.Main>
+        <Aside />
         <S.WrappedContent>{children}</S.WrappedContent>
       </S.Main>
     </S.Container>
   );
 };
-export default MainLayout;

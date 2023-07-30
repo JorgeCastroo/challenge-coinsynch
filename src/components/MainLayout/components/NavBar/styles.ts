@@ -33,6 +33,5 @@ export const WrappedCryptosAndButtons = styled("div", {
 export const WrappedButtons = styled("div", {
   display: "flex",
   flexDirection: "row",
-  gap: "$5",
   alignItems: "center",
 });

@@ -58,25 +58,9 @@ export const Button = styled("button", {
       },
     },
     variant: {
-      contained: {
-        "& svg": {
-          fill: "$white",
-          "& path": {
-            fill: "$white",
-          },
-        },
-      },
       text: {
         background: "transparent !important",
-      },
-      outlined: {
-        borderWidth: "thin",
-        borderStyle: "solid",
-        borderColor: "inherit",
-        background: "transparent !important",
-        "&:not(:disabled):not(:active):hover": {
-          background: "transparent",
-        },
+        color: "$text-base !important",
       },
     },
     size: {
@@ -84,7 +68,6 @@ export const Button = styled("button", {
         height: "40px !important",
         padding: "$1 $4",
         lineHeight: "$base",
-        gap: "$",
         fontSize: "$sm",
       },
       medium: {
@@ -97,21 +80,36 @@ export const Button = styled("button", {
         padding: "$3 $6",
         height: "48px !important",
         gap: "$1 !important",
-        fontSize: "$sm",
+        fontSize: "$xs",
       },
     },
 
     color: {
       primary: {
-        color: "$white !important",
-        background: "$primary-500 !important",
+        color: "$white ",
+        background: "$primary-500 ",
         "&:hover": {
-          background: "$primary-300 !important",
+          background: "$primary-300",
         },
         "&:active": {
-          background: "$primary-600 !important",
+          background: "$primary-600 ",
           "&:hover": {
-            background: "$primary-700 !important",
+            background: "$primary-700 ",
+          },
+        },
+      },
+
+      primaryLigth: {
+        color: "$primary-500 ",
+        fontWeight: "$regular",
+        background: "$primary-100 ",
+        "&:hover": {
+          background: "$primary-200",
+        },
+        "&:active": {
+          background: "$primary-300 ",
+          "&:hover": {
+            background: "$primary-400 ",
           },
         },
       },
@@ -125,6 +123,19 @@ export const Button = styled("button", {
           background: "$secondary-600 !important",
           "&:hover": {
             background: "$secondary-700 !important",
+          },
+        },
+      },
+      tertiary: {
+        color: "$white !important",
+        background: "$tertiary-700 !important",
+        "&:hover": {
+          background: "$tertiary-500 !important",
+        },
+        "&:active": {
+          background: "$tertiary-600 !important",
+          "&:hover": {
+            background: "$tertiary-900 !important",
           },
         },
       },
@@ -147,25 +158,8 @@ export const Button = styled("button", {
     },
   },
 
-  compoundVariants: [
-    {
-      isLoading: true,
-      variant: "contained",
-      css: {
-        color: "transparent ",
-        "& svg": {
-          color: "$white",
-          "& path": {
-            fill: "transparent",
-          },
-        },
-      },
-    },
-  ],
-
   defaultVariants: {
     size: "medium",
-    variant: "contained",
     color: "primary",
   },
 });

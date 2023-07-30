@@ -37,7 +37,9 @@ export const base = {
     success: {
       color: "$tertiary-700",
     },
-
+    danger: {
+      color: "$quartenary-700",
+    },
     white: {
       color: "$white",
     },

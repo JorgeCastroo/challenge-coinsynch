@@ -1,5 +1,4 @@
 
-
 ## Start de projeto
 
 - Instale as dependencias:
@@ -9,8 +8,14 @@ yarn  add
 
 ```
 
+## Inicie o Json serve para utilização da fake api
+
 
 ```
+npx json-server --watch db.json
+
+```
+
 
 ## Estrutura do projeto e organização de pastas
 
@@ -42,7 +47,6 @@ yarn  add
             |-- fonts.ts
         |-- base.ts  # Configuração e estilização base do stitches
         |-- global.ts  # CSS global
-
   .eslintrc.json
   .gitignore
   next-env.d.ts

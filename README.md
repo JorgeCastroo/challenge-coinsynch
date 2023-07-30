@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
-
 ## Start de projeto
 
 - Instale as dependencias:
@@ -13,12 +9,10 @@ yarn  add
 
 ## Inicie o Json serve para utilização da fake api
 
-
 ```
 npx json-server --watch db.json
 
 ```
-
 
 ## Estrutura do projeto e organização de pastas
 
@@ -60,4 +54,3 @@ npx json-server --watch db.json
   tsconfig.json
   yarn.lock
 ```
->>>>>>> 3a030f8684935aff62838baa2b0461be336bfe51
